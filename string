@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string str1,str2;
+    char c;
+    cin>>str1;
+    cin>>str2;
+    int len1=0,len2=0;
+    for(int i=0;str1[i]!='\0';i++)
+    {len1++;}
+     for(int i=0;str2[i]!='\0';i++)
+    {len2++;}
+    cout<<len1<<" "<<len2<<endl;
+    cout<<str1<<str2<<endl;
+    c=str1[0];
+    str1[0]=str2[0];
+    str2[0]=c;
+    cout<<str1<<" "<<str2<<endl;
+    return 0;
+}
